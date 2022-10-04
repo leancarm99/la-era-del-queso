@@ -3,8 +3,10 @@
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,73 +15,105 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="./assets/img/logo.png" alt="logo la era del queso" class="logo"></a>
-        
-        <nav>
-            <ul>
-                <li> Productos
-                    <ul>
-                        <li><a href="./pages/fiambres.html">Fiambres</a></li>
-                        <li><a href="./pages/quesos.html">Quesos</a></li>
-                        <li><a href="./pages/embutidos.html">Embutidos</a></li>
-                    </ul>
-                </li>
-                <li><a href="./pages/picadas.html">Picadas</a></li>
-                <li><a href="./pages/donde-estamos.html">Donde estamos</a></li>
-            </ul>
-        </nav>
+    <header class="navbar navbar-expand-lg header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/logo-3.png" alt="" class="w-50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./pages/fiambres.html">Fiambres</a></li>
+                            <li><a class="dropdown-item" href="./pages/quesos.html">Quesos</a></li>
+                            <li><a class="dropdown-item" href="./pages/embutidos.html">Embutidos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/picadas.html">Picadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/donde-estamos.html">Donde estamos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <!-- Portada -->
-        <section class="portada">
-        </section>
-        <h2>PRODUCTOS</h2> 
-        <!-- Categoria fiambres -->
-        <div class="div-productos-index">
-            <section class="section-producto-index">
-                <img src="./assets/img/fiambres-rectangular.jpg" alt="fiambres" class="img-producto-index">
-                <h3>FIAMBRES</h3>
-            </section>
+        <div class="portada">
         </div>
-        <!-- Categoria quesos -->
-        <div class="div-productos-index">
-            <section class="section-producto-index">
-                <img src="./assets/img/quesos-rectangular.jpg" alt="quesos" class="img-productos-index">
-                <h3>QUESOS</h3>
-            </section>
+        <h2 class="index-h2">PRODUCTOS</h2>
+
+        <!-- Categorias -->
+        <div class="div-productos d-flex row">
+            <article class="productos col-4">
+                <h2 class="texto-productos">FIAMBRES</h2>
+            <img src="./assets/img/fiambres-rectangular.jpg" alt="" class="img-producto-index">
+            </article>
+            <article class="productos col-4">
+                <h2 class="texto-productos">QUESOS</h2>
+            <img src="./assets/img/quesos-rectangular.jpg" alt="" class="img-producto-index">
+            </article>
+            <article class="productos col-4">
+                <h2 class="texto-productos">EMBUTIDOS</h2>
+            <img src="./assets/img/embutidos-rectangular.jpg" alt="" class="img-producto-index">
+            </article>
         </div>
-        <!-- Categoria embutidos -->
-        <div class="div-productos-index">
-            <section class="section-producto-index">
-                <img src="./assets/img/embutidos-rectangular.jpg" alt="embutidos" class="img-producto-index">
-                <h3>EMBUTIDOS</h3>
-            </section>
-        </div>
+
     </main>
-    <footer>
-        <div>
-            <ul>
-                <li> <a href="index.html">INICIO</a> </li>
-                    <li><a href="./pages/fiambres.html">FIAMBRES</a></li>
-                    <li><a href="./pages/quesos.html">QUESOS</a></li>
-                    <li><a href="./pages/embutidos.html">EMBUTIDOS</a></li>
-                <li><a href="./pages/picadas.html">PICADAS</a></li>
-                <li><a href="./pages/donde-estamos.html">DONDE ESTAMOS</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>HORARIOS</h4>
-            <p>Lunes a Sabados <br> 9:30-13:30, 17:00-20:00</p>
-        </div>
-        <div> <h4>DIRECCION</h4>
-            <P>Av. Juan Bautista Alberdi 2828</P>
-        </div>
-        <div>
-            <img src="./assets/img/instagram.png" alt="logo de instagram" class="icono-instagram">
-            <a href="https://www.instagram.com/laeradelqueso/">@laeradelqueso</a>
-        </div>
-    </footer>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 item">
+                        <h3>PAGINAS</h3>
+                        <ul>
+                            <li><a href="./index.html">INICIO</a></li>
+                            <li><a href="./pages/fiambres.html">FIAMBRES</a></li>
+                            <li><a href="./pages/quesos.html">QUESOS</a></li>
+                            <li><a href="./pages/embutidos.html">EMBUTIDOS</a></li>
+                            <li><a href="./pages/picadas.html">PICADAS</a></li>
+                            <li><a href="./pages/donde-estamos.html">DONDE ESTAMOS</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 item text">
+                        <h3>DIRECCION</h3>
+                        <p>Av. Juan Bautista Alberdi 2828</p>
+                    </div>
+                    <div class="col-md-4 item text">
+                        <h3>HORARIOS</h3>
+                        <p>Lunes a Sabados <br> 9:30-13:30, 17:00-20:00</p>
+                    </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+
+
+<!-- <div class="div-productos d-flex row">
+    <article class="article-producto-index col-3">
+        <img src="./assets/img/fiambres-rectangular.jpg" alt="fiambres" class="img-producto-index">
+        <h3>FIAMBRES</h3>
+    </article>
+    <article class="article-producto-index col-3">
+        <img src="./assets/img/quesos-rectangular.jpg" alt="quesos" class="img-producto-index">
+        <h3>QUESOS</h3>
+    </article>
+    <article class="article-producto-index col-3">
+        <img src="./assets/img/embutidos-rectangular.jpg" alt="embutidos" class="img-producto-index">
+        <h3>EMBUTIDOS</h3>
+    </article>
+</div>  -->

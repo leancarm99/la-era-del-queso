@@ -16,69 +16,60 @@ a {
 }
 
 /* Header */
-header {
+.header {
     font-size: 1.2rem;
     background-color: #D9D9D9;
-    color: black;
-    padding: 2px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-header nav {
-    width: 50%;
-}
-
-header ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-.logo {
-    height: 6rem;
+    padding: 0px;
 }
 
 
 /* Index Productos */
-.div-productos-index {
-    display: flex;
+.index-h2 {
+text-align: center;
+padding: 20px;
+}
+.productos {
+  width: 400px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
-    width: 533px;
-    height: 790px;
+
+.texto-productos {
+  text-align: center;
+  font-size: 3rem;
+  color: #000000;
+  position: relative;
+  top: 300px;
+}
+.article-producto-index {
+    border-radius: 20px;
+    padding: 1px;
 }
 .img-producto-index {
-    max-height: 700px;
-    max-width: 400px ;
+border-radius: 10%;
+transition: all 0.8s ease;
 }
 
-.section-producto-index {
-    border: 2px solid black;
-    background-color: #D9D9D9;
-    width: 500px;
-    height: 700px;
-    border-radius: 20px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-self: center;
+.img-producto-index:hover {
+transition: all 0.6s ease;
+filter: brightness(30%);
 }
+.a-producto-index {
+align-items: center;
+}
+
 /* Portadas */
 .portada {
     background-image: url(../assets/img/cartel-la-era-del-queso.png);
-    background-position: center;
     background-size: cover;
-    height: 95vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 70vh;
+    background-position: center;
 }
 
 .portada-fiambres {
-    background-image: url(../assets/img/fiambres2.png);
+    background-image: url(../assets/img/fiambres.jpg);
     background-position: center;
     background-size: cover;
     height: 95vh;
@@ -134,8 +125,8 @@ header ul {
 
 .producto {
     background-color: #D9D9D9;
-    width: 500px;
-    height: 700px;
+    width: 400px;
+    height: 600px;
     border-radius: 20px;
     padding: 15px;
     display: flex;
@@ -148,19 +139,20 @@ header ul {
     padding: 15px;
     text-align: center;
     font-size: 2rem;
+    overflow: hidden;
+    flex-wrap: nowrap;
 }
 
 .div-productos {
-    display: flex;
-    justify-content: row;
     overflow: hidden;
-    flex-wrap: wrap;
     padding: 30px;
     margin: 30px;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: space-evenly;
     gap: 40px;
+    align-items: center;
 }
+
+
 
 .img-producto {
     border-radius: 10px;
@@ -173,29 +165,83 @@ header ul {
     padding: 10px 15px;
 }
 
-
-
 .cantidad {
     text-align: end;
 }
 
 input {
-    width: 10em;
-    height: 3em;
+    width: 50%;
+    height: 5vh;
     text-align: center;
     border-radius: 10px;
-    }
+}
 
 /* footer */
-footer {
-    font-size: 1.2rem;
-    background-color: #D9D9D9;
-    color: black;
-    padding: 50px;
-    display: flex;
-    justify-content: space-around;
-}
 
-.icono-instagram {
-    max-height: 2rem;
-}
+.footer-dark {
+    padding:50px 0;
+    color:black;
+    background-color: #D9D9D9;
+  }
+  
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+
+  .texto-footer {
+    text-align: center;
+  }
