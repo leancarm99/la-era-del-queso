@@ -1,0 +1,118 @@
+.producto {
+    background-color: #D9D9D9;
+    width: 400px;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+.nombre-articulo-en-venta {
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-size: 2rem;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.div-productos {
+    overflow: hidden;
+    padding: 30px;
+    margin: 30px;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+}
+
+.producto {
+    background-color: #D9D9D9;
+    width: 400px;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+.nombre-articulo-en-venta {
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-size: 2rem;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.div-productos {
+    overflow: hidden;
+    padding: 30px;
+    margin: 30px;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+}
+
+.img-producto {
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #A5A5A5;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.cantidad {
+    text-align: end;
+}
+
+input {
+    width: 50%;
+    height: 5vh;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+
+.picada {
+    background-color: #D9D9D9;
+    width: 90%;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.div-picada {
+    overflow: hidden;
+    padding: 30px;
+    margin: 30px;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+}
+
+.img-picada {
+    border-radius: 10px;
+    float: left;
+}
+
+.nombre-picada-en-venta {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    overflow: hidden;
+
+}
+
+.precios-picada {
+    background-color: #A5A5A5;
+    width: 150px;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    margin: 3px auto;
+}

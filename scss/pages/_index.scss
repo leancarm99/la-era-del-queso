@@ -1,0 +1,40 @@
+.index-h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.productos {
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-productos {
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+    color: #000000;
+    background-color: #D9D9D9;
+    position: relative;
+    top: 300px;
+}
+
+.article-producto-index {
+    border-radius: 20px;
+    padding: 1px;
+}
+
+.img-producto-index {
+    border-radius: 10%;
+    transition: all 0.5s ease;
+}
+
+.img-producto-index:hover {
+    transition: all 0.5s ease;
+    filter: brightness(30%);
+}
+
+.a-producto-index {
+    align-items: center;
+}

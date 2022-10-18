@@ -1,0 +1,59 @@
+.portada {
+  background-image: url(../assets/img/cartel-la-era-del-queso.png);
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+}
+
+.portada-fiambres {
+  background-image: url(../assets/img/fiambres.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada-quesos {
+  background-image: url(../assets/img/quesos2.png);
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada-picadas {
+  background-image: url(../assets/img/picada-portada.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada-embutidos {
+  background-image: url(../assets/img/embutidos/portada-embutidos.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-portada {
+  text-align: center;
+  font-size: 3rem;
+  padding: 10px;
+  color: #000000;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+}
